@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+
+	font-family: 'Open Sans', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+	border:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+ul.menu{
+	background: #00008B;
+	height: 50px;
+	position: relative;
+}
+ul.menu >li{
+	float: left;
+
+}
+ul.menu >li >a{
+	display: block;
+	font-size: 14px;
+    color: #fff;
+    padding: 0 15px;
+    line-height: 50px;
+	border-right: 1px solid rgba(0,0,0,.2);
+}
+ul.menu ul{
+	background:  #8080c5;
+	width: 200px;
+	position: absolute;
+	top: 10px;
+    opacity: 0;
+    transition: 250ms all;
+    visibility: hidden;
+}
+ul.menu ul li a{
+	display: block;
+	padding: 7px 12px;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+ul.menu >li:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+ul.menu >li ul ul{
+	top: 0;
+	left: 180px;
+	background:   #8080c5;
+}
+ul.menu  ul li:hover >ul{
+    
+    opacity: 1;
+    visibility: visible;
+}
+ul.menu  ul li ul:hover >ul{
+    
+    opacity: 1;
+    visibility: visible;
+    left: 220px;
+}
+ul.menu ul li {
+	position: relative;
+}
